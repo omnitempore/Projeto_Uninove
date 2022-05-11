@@ -145,6 +145,7 @@ function novoJogo(){
  
     countEmpate = 0;
 
+    alert("1º Turno - Jogador " + player);
 }
 
 // Chamando Funções

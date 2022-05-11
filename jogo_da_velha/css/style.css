@@ -29,7 +29,6 @@ body{
     flex-direction: row;
     font-size: 1.8em;
     margin-top: 15px;
-    border: 1px solid rgb(76, 76, 182);
 }
 
 #jogador1{
