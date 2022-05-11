@@ -903,8 +903,10 @@ let palavraSecretaCategoria;
 let palavraSecretaSorteada;
 let listaDinamica = [];
 let tentativas = 6;
+let resposta = 1;
 const categoria = document.getElementById("categoria");
 const palavraSecreta = document.getElementById("palavra-secreta");
+const chances = document.getElementById("tentativas");
 
 // Criando Funções
 function gerarPalavraSecreta(){
@@ -913,7 +915,6 @@ function gerarPalavraSecreta(){
     palavraSecretaSorteada = palavras[indexPalavra].nome;
     palavraSecretaCategoria = palavras[indexPalavra].categoria;
 
-    console.log(palavraSecretaSorteada)
 }
 
 function desenharPalavra(){
@@ -923,7 +924,7 @@ function desenharPalavra(){
     palavraSecreta.innerHTML = "";
 
     listaDinamica = Array.from(palavraSecretaSorteada);
-    console.log(listaDinamica);
+
     for(i = 0; i < palavraSecretaSorteada.length; i++){
         if(listaDinamica[i] == " "){
             palavraSecreta.innerHTML = palavraSecreta.innerHTML + "<div id='blank'> </div>";
@@ -932,7 +933,6 @@ function desenharPalavra(){
             palavraSecreta.innerHTML = palavraSecreta.innerHTML + "<div id='espaco'>" + listaDinamica[i] + "</div>";
         }
     }
-    console.log(listaDinamica);
 }
 
 function verificarLetra(letra){
@@ -1018,7 +1018,7 @@ function mostrarLetra(letra){
 
     }
 
-    console.log(listaDinamica);
+    chances.innerHTML = "<p>Tentativas: " + tentativas + "</p>";
 }
 
 function verificarAcento(letra, pos){
@@ -1062,6 +1062,30 @@ function verificarAcento(letra, pos){
     }
     
     return pos;
+}
+
+function atualizarPagina(){
+    document.location.reload(true);
+}
+
+function responder(){
+
+    if(resposta > 0){
+    
+        var tentativa = prompt("Escreve a resposta:");
+
+        if(tentativa == palavraSecretaSorteada){
+            alert("Resposta CORRETA!");      
+        }else{
+            alert("Resposta ERRADA!");
+        }
+        
+        bloquearLetra("btnresposta");
+
+        resposta--;
+    }
+    
+    
 }
 
 // Chamando Funções

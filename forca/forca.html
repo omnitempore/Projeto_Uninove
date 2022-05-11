@@ -11,17 +11,13 @@
     <div class="container">
         <div class="imagem-forca"></div>
 
-        <div class="palavra-secreta" id="palavra-secreta">
-            <!-- <div id="espaco">A</div>
-            <div id="blank">&nbsp;</div>
-            <div id="espaco">C</div>
-            <div id="blank">D</div>
-            <div id="espaco">E</div> -->
+        <div id="tentativas">
+            <p>Tentativas: 6</p>
         </div>
 
-        <div class="categoria" id="categoria">
-            <p>TESTE</p>
-        </div>
+        <div class="palavra-secreta" id="palavra-secreta"></div>
+
+        <div class="categoria" id="categoria"></div>
 
         <div class="teclado">
             <div class="teclas1">
@@ -49,7 +45,7 @@
                 <button id="letra-Ç" onclick="verificarLetra('Ç')">Ç</button>
             </div>
             <div class="teclas3">
-                <button id="btnespecial">NOVO</button>
+                <button id="btnnovo" onclick="atualizarPagina()">NOVO</button>
                 <button id="letra-Z" onclick="verificarLetra('Z')">Z</button>
                 <button id="letra-X" onclick="verificarLetra('X')">X</button>
                 <button id="letra-C" onclick="verificarLetra('C')">C</button>
@@ -57,7 +53,7 @@
                 <button id="letra-B" onclick="verificarLetra('B')">B</button>
                 <button id="letra-N" onclick="verificarLetra('N')">N</button>
                 <button id="letra-M" onclick="verificarLetra('M')">M</button>
-                <button id="btnespecial">RESP</button>
+                <button id="btnresposta" onclick="responder()">RESP</button>
             </div>
         </div>
 
