@@ -44,7 +44,7 @@ let posicaoLivre = false;
             }
 
         }else{
-            alert("Place taken");
+            alert("Posição Ocupada!");
             posicaoLivre = false;
         }
         
@@ -87,7 +87,6 @@ function verificarEmpate(){
 }
 
 function verificarVitoria(player){
-    console.log(player);
     if(posicoes[0][0] == player && posicoes[0][1] == player && posicoes[0][2] == player){
         alert("Player " + player + " wins");
         victory = true;

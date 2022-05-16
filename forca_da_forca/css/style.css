@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    width: 100vw;
+    height: 90vh;
+    margin-top: 10px;
+    background-color: #ffe4c4;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#imagem-forca{
+    background-image: url("../img/forca7.png");
+    width: 150px;
+    height: 255px;
+    background-repeat: no-repeat;
+}
+
+.palavra-secreta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: #D95D52;
+    margin-top: 15px;
+}
+
+#espaco{
+    width: 16px;
+    text-align: center;
+    border-bottom: 2px solid #001b3b;
+    margin: 0px 2px 0px 2px
+}
+
+#blank{
+    width: 16px;
+    text-align: center;
+    margin: 0px 2px 0px 2px
+}
+
+.categoria{
+    margin-top: 15px;
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: bold;
+    color: #525ED9;
+}
+
+.teclado{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.teclas1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+}
+
+.teclas2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 35px;
+}
+
+.teclas3{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+}
+
+/* Design das Teclas*/
+.teclas1 button{
+    cursor: pointer;
+    box-shadow: 0px 0px 3px dimgray;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #001b3b;
+    width: 20px;
+    margin: 10px 3px 3px 3px;
+    color: #001b3b;
+    font-weight: bold;
+}
+
+.teclas2 button{
+    cursor: pointer;
+    box-shadow: 0px 0px 3px dimgray;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #001b3b;
+    width: 20px;
+    margin: 2px 3px 3px 3px;
+    color: #001b3b;
+    font-weight: bold;
+}
+
+.teclas3 button{
+    cursor: pointer;
+    box-shadow: 0px 0px 3px dimgray;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #001b3b;
+    width: 20px;
+    margin: 2px 3px 3px 3px;
+    color: #001b3b;
+    font-weight: bold;
+}
+
+.teclas3 > #btnnovo{
+    cursor: pointer;
+    box-shadow: 0px 0px 3px dimgray;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #001b3b;
+    width: 56px;
+    color: #001b3b;
+    font-weight: bold;
+}
+
+.teclas3 > #btnresposta{
+    cursor: pointer;
+    box-shadow: 0px 0px 3px dimgray;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #001b3b;
+    width: 55px;
+    color: #001b3b;
+    font-weight: bold;
+}
+
+.teclas1 button:hover{
+    transform: scale(1.3);
+}
+
+.teclas2 button:hover{
+    transform: scale(1.3);
+}
+
+.teclas3 button:hover{
+    transform: scale(1.3);
+}
+
+/* SCREEN SIZE 350px */
+@media (min-width: 350px){
+    .palavra-secreta{
+        font-size: 1.4em;
+    }
+    
+    #espaco{
+        width: 20px;
+    }
+    
+    .categoria{
+        font-size: 1.2em;
+    }
+    
+    .teclas1 button{
+        font-size: 1.1em;
+        width: 25px;
+    }
+    
+    .teclas2 button{
+        font-size: 1.1em;
+        width: 25px;
+    }
+    
+    .teclas3 button{
+        font-size: 1.1em;
+        width: 25px;
+    }
+    
+    .teclas3 > #btnespecial{
+        width: 55px;
+    }
+}
+
+/* SCREEN SIZE 400px */
+@media (min-width: 400px){
+    .palavra-secreta{
+        font-size: 1.5em;
+    }
+    
+    #espaco{
+        width: 25px;
+    }
+    
+    .categoria{
+        font-size: 1.3em;
+    }
+    
+    .teclas1 button{
+        font-size: 1.2em;
+        width: 30px;
+    }
+    
+    .teclas2 button{
+        font-size: 1.2em;
+        width: 30px;
+    }
+    
+    .teclas3 button{
+        font-size: 1.2em;
+        width: 30px;
+    }
+    
+    .teclas3 > #btnespecial{
+        width: 65px;
+    }
+}

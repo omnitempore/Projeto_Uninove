@@ -1,0 +1,104 @@
+/* Estilo Comum para todas as Páginas*/
+body{
+    margin: 0;
+    background-color: black;
+}
+
+/* Estilo Página o_jogo.html*/
+.regras{
+    color: white;
+}
+
+/* Estilo Página o_comeco.html*/
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.campo-imagem{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    border: 1px solid rgb(37, 37, 37);
+}
+
+video{
+    border: 1px solid rgb(37, 37, 37);
+}
+
+.campo-resposta{
+    display: flex;
+    width: 200px;
+    height: 60px;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#answer{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+#btn{
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgb(17, 48, 43);
+}
+
+/* Estilo Página eu_nao_o_vi.html*/
+.texto1{
+    width: 400px;
+}
+
+#canto-3{
+    margin-left: 15px;
+    color: white;
+}
+
+.texto2{
+    width: 400px;
+}
+
+#cifra-LPL{
+    text-align: center;
+    color: white;
+}
+
+/* Estilo Página mas_ele_estava_la.html*/
+.left{
+    font-size: 1.2em;
+    text-align: center;
+    width: 300px;
+    margin-left: 40px;
+}
+
+.right{
+    font-size: 1.2em;
+    text-align: center;
+    width: 300px;
+    margin-right: 40px;
+}
+
+.img-platao{
+    text-align: center;
+}
+
+#platao{
+    width: 80%;
+    height: 80%;
+}
+
+area{
+    cursor: pointer;
+}
