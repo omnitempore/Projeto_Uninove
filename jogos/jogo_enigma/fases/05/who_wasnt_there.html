@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mas Ele Estava Lá</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="campo-imagem">
+            <div class="left">
+<pre>
+0   1   0   0   0   1   0   1
+0   1   1   0   1   1   1   0
+0   1   1   0   0   0   1   1
+0   1   1   0   1   1   1   1
+0   1   1   0   1   1   1   0
+0   1   1   1   0   1   0   0
+0   1   1   1   0   0   1   0
+0   1   1   0   0   1   0   1
+0   0   1   0   1   1   0   1
+0   1   1   0   1   1   0   1
+0   1   1   0   0   1   0   1
+0   0   1   0   0   0   0   0
+0   1   1   0   1   1   1   0
+0   1   1   0   0   0   0   1
+0   0   1   0   0   0   0   0
+0   1   1   1   0   0   0   0
+</pre>                
+            </div>
+            <div class="img-platao">
+                <img src="../../imagens/05-mas_ele_estava_la.jpg" alt="mas_ele_estava_la" id="platao" usemap="#pointer">
+                
+                <map name="pointer" id="mapa">
+                    <area shape="circle" coords="223, 142, 20" onclick="alert('/sussuros')" alt="">
+                </map>
+                
+            </div>
+            <div class="right">
+<pre>
+1   1   0   0   0   0   1   1
+1   0   1   0   0   0   0   1
+0   1   1   0   0   1   1   1
+0   1   1   0   1   0   0   1
+0   1   1   0   1   1   1   0
+0   1   1   0   0   0   0   1
+0   0   1   0   0   0   0   0
+0   1   1   1   0   0   1   1
+0   1   1   1   0   1   0   1
+0   1   1   1   0   0   1   1
+0   1   1   1   0   0   1   1
+0   1   1   1   0   1   0   1
+0   1   1   1   0   0   1   0
+0   1   1   1   0   0   1   0
+0   1   1   0   1   1   1   1
+0   1   1   1   0   0   1   1
+</pre>
+            </div>
+            
+        </div>
+        
+        <div class="campo-resposta">
+            <input type="text" name="answer" id="answer" autocomplete="off">
+            <input type="hidden" name="fase_name" id="fase_name" value="4">
+                      
+            <button id="btn" onclick="verificarResposta(document.getElementById('answer').value)">Responder</button>
+        </div>
+
+        <script src="../../js/enigma.js"></script>
+    </div>  
+</body>
+</html>
