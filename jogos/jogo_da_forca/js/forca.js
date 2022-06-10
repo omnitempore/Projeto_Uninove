@@ -1106,7 +1106,7 @@ function verificarVitoria(){
     }
 
     if(tentativas == 0){
-        alert("Você Perdeu!");
+        alert("Você Perdeu!\nPalavra Secreta: " + palavraSecretaSorteada);
     }
 }
 

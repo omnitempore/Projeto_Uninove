@@ -140,3 +140,31 @@ area{
     color: white;
     font-size: 4em;
 }
+
+@media screen and (max-width: 320px){
+    .regras{
+        max-width: fit-content;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .regras{
+        max-width: fit-content;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .regras{
+        max-width: fit-content;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .regras{
+        max-width: fit-content;
+
+    }
+}

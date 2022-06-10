@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgba(246, 241, 209);
+    background-image: url("../img/backgrounds/background1366.png");
+    display: flex;
+    align-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.85);
+    margin-top: 10px;
+    padding: 2%;
+    font-size: 1.1em;
+    border-radius: 10px;
+    width: 360px;
+}
+
+.cont-intro > h1, p{
+    margin: 20px 0 20px 0;
+}
+
+#anexar-arquivo{
+    background-color: rgba(190, 190, 190, 0.5);
+    margin-top: 15px;
+}
+
+#InputNome{
+    width: 350px;
+    height: 20px;
+}
+
+#lblTag{
+    margin-top: 15px;
+    display:inline-block;
+}
+
+form > textarea{
+    width: 350px;
+    height: 100px;
+    resize: vertical;
+    opacity: 0.8;
+}

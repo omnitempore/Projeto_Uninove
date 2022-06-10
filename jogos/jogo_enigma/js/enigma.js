@@ -92,14 +92,14 @@ var sha256 = function sha256(ascii) {
 
 let faseIndex = document.getElementById("fase_name").value;
 let fii = fases[faseIndex].index;
-let fase = "file:///D:/Programas/wamp64/www/Uninove_Projeto/jogo_enigma/fases/" + fases[faseIndex].url;
+let fase = "https://s3.sa-east-1.amazonaws.com/app.jogosonline.cf/jogos/jogo_enigma/fases/" + fases[faseIndex].url;
 let resp;
 
 function verificarResposta(answer){
     resp = sha256(answer);
     
     if(resp == fii){
-        window.location = fase;
+        location.assign(fase);
     }else{
         alert("Resposta Errada!");
     }

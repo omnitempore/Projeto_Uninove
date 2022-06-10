@@ -30,6 +30,7 @@ body {
     background-image: url("../img/backgrounds/background1366.png");
     background-size: 1366px;
     background-repeat: no-repeat;
+    flex-direction: column;
 }
 
 button {

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Bug</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="container">
+        <div class="cont-intro">
+            <h1>Reportar Bug</h1>
+
+            <p>
+            Ajude-nos a melhor sua experiência em nossos jogos.<br>
+            Aqui poderá reportar bugs ou nos dar sugestões de melhoria.<br>
+            Seu FeedBack sempre será bem-vindo!<br>
+            </p>
+
+        </div>
+        
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="accessKey" value="fd5d8f3d-b4df-4ce9-ad66-b0d399fd374d">
+            <input type="hidden" name="subject" value="Reporte de Bug">
+
+            <label id="lblTag">Nome: </label><br>
+            <input type="text" name="name" placeholder="Nome" id="InputNome"><br>
+
+            <label id="lblTag">Jogo: </label><br>
+            <input type="text" list="$jogo" name="$jogo" id="InputNome"><br>
+            <datalist id="$jogo">
+                <option value="Enigma">
+                <option value="Jogo da Forca">
+                <option value="Jogo da Velha">
+              </datalist>
+            
+            <label id="lblTag">Mensagem: </label><br>
+            <textarea name="message"></textarea><br><br>
+            
+            <input type="submit" value="Enviar E-mail" />
+            <input type="hidden" name="redirectTo" value="https://s3.sa-east-1.amazonaws.com/app.jogosonline.cf/repotar_bug/reportar_bug.html">
+        </form>
+
+    </div>
+    
+</body>
+</html>
